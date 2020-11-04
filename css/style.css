@@ -323,6 +323,10 @@ justify-content: center;
 	 background-image: linear-gradient(top, #3eacba, #48c6d4);
 }
 
+.tertiary {
+	padding-bottom: 2em;
+}
+
 /* Media Containers*/
 @media (max-width: 450px) {
 	.main-header,
