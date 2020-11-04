@@ -1,0 +1,299 @@
+/* Web Fonts -------------------- */
+
+@font-face {
+  font-family: 'Abolition Regular';
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+/* Base Styles -------------------- */
+* {
+    /* -------Base--------------------*/
+	box-sizing: border-box;
+}
+
+body {
+    /* -------Base--------------------*/
+	line-height: 1.6;
+	color: #fff;
+	margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: -webkit-linear-gradient(left, #32292f, #70abaf);
+  background: linear-gradient(to right, #32292f, #70abaf);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+    /* -------Base--------------------*/
+	text-decoration: none;
+}
+
+p {
+    /* -------Base--------------------*/
+	font-size: 1.3em;
+	margin-bottom: 1.8em;
+  text-align: center;
+
+}
+h2 {
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+
+/* --------------------------- Navigation --------------------------------- */
+/* --------------------------- Navigation --------------------------------- */
+.name {
+    /* -------Base--------------------*/
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-left: 2em;
+}
+.navbar {
+    /* -------Base--------------------*/
+	margin-top: 5px;
+}
+.name a,
+.navbar a {
+    /* -------Base--------------------*/
+	text-align: center;
+	display: block;
+	padding: 5px 15px;
+}
+.navbar a {
+    /* -------Base--------------------*/
+	font-size: .95em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-right: 2em;
+}
+.navbar a:hover {
+    /* -------Base--------------------*/
+	color: #99e1d9;
+}
+/* --------------------------- Button --------------------------------- */
+.glow {
+    width: 220px;
+    height: 3em;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.glow:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow:active {
+    color: #000
+}
+
+.glow:active:after {
+    background: transparent;
+}
+
+.glow:hover:before {
+    opacity: 1;
+}
+
+.glow:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* --------------------------- Layout Containers -------------------------- */
+.main-header {
+    /* -------Base--------------------*/
+	padding-top: .5em;
+	padding-bottom: .5em;
+  background-color: #32292f;
+  width: 100%;
+  position: fixed;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  z-index: 1000;
+}
+.banner,
+.main-footer {
+    /* -------Base--------------------*/
+	text-align: center;
+}
+.banner {
+    /* -------Base--------------------*/
+	padding-top: 1em;
+	margin-bottom: 0;
+  margin-top: 48px;
+  height: auto;
+
+  /* -----------------------Flex--------------------*/
+  justify-content: center;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.col {
+    /* -------Base--------------------*/
+	padding-right: 1em;
+	padding-left: 1em;
+  border: 5px black;
+  height: 500px;
+
+/* -----------------------Flex--------------------*/
+  justify-content: center;
+  align-items: center;
+}
+.main-footer {
+    /* -------Base--------------------*/
+	background: #32292f;
+	padding: 1em 0;
+	margin-top: 30px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  flex-shrink: 0;
+  position: fixed bottom;
+}
+/* -----------------------Flex--------------------*/
+.row {
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+/* Media Containers*/
+
+@media (max-width: 450px) {
+.navbar,
+.main-header {
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+}
+@media (min-width: 300px) {
+  /* -------Base--------------------*/
+  .main-header{
+    width: 100%;
+  }
+	.row {
+		width: 90%;
+		margin: 0 auto;
+  }
+
+/* -----------------------Flex--------------------*/
+  .main-header,
+  .navbar,
+  .row,
+  .col,
+  .banner {
+  display: flex;
+}
+.main-header {
+flex-direction: column;
+align-items: center;
+}
+
+
+.col {
+flex: 1;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.row {
+  flex-wrap: wrap;
+}
+.banner {
+  padding-top: 10em;
+}
+}
+@media (min-width: 1025px) {
+    /* -------Base--------------------*/
+	.main-header{
+    width: 100%;
+  }
+
+	.row {
+		width: 80%;
+		max-width: 1150px;
+	}
+/* -----------------------Flex--------------------*/
+.main-header {
+flex-direction: row;
+justify-content: space-between;
+flex-grow: 1;
+}
+
+.col {
+  flex-basis: 0;
+  justify-content: center;
+  align-items: center;
+}
+.welcome {
+  flex-grow: 2;
+
+}
+.row {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.banner {
+  padding-top: 5em;
+}
+
+
+}

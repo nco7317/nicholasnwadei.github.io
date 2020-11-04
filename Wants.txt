@@ -1,0 +1,35 @@
+Different high def background on each page
+background with stars
+nfl sports ticker on the interests page
+art and a quote on the home page
+view my resume link
+
+	On contact page use this for the address or contact info
+        <h2>Contact</h2>
+          <p><strong>Email:</strong> <a href="mailto:nicholasnwadei@gmail.com?subject=You're%20hired!">nicholasnwadei@gmail.com</a></p>
+          <p><strong>Phone:</strong> 555-123-4567</p>
+          <p><strong>Address:</strong></p>
+       <address>
+          Experience VR<br>
+         2020 Virtual Way<br>
+         City, State 33437<br>
+        </address> 
+
+Back to top link
+if it is just 1 page then have the links lead to the specific sections of the page
+			(#idname)
+In intrests include a spotify playlist and include the JRE
+earth tones
+
+use javascript to use readers name when reading my cover letter/resume
+graph showing language profficiencies
+
+UH logo on page (fixed)
+
+Order:
+Nav
+Background pic
+projects (left 30%)       graph of profficiencies (middle to right 70%)
+contact with profile pic
+
+

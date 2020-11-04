@@ -1,0 +1,443 @@
+/* Web Fonts -------------------- */
+
+@font-face {
+  font-family: 'Abolition Regular';
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+/* Base Styles -------------------- */
+* {
+    /* -------Base--------------------*/
+	box-sizing: border-box;
+}
+html {
+  background: -webkit-linear-gradient(left, #32292f, #70abaf);
+  background: linear-gradient(to right, #32292f, #70abaf);
+}
+
+body {
+    /* -------Base--------------------*/
+	line-height: 1.6;
+	margin: 0;
+  /* min-height: 100vh; */
+  /* background: -webkit-linear-gradient(left, #32292f, #70abaf);
+  background: linear-gradient(to right, #32292f, #70abaf); */
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+    /* -------Base--------------------*/
+	text-decoration: none;
+}
+
+p {
+    /* -------Base--------------------*/
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2 {
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+/* --------------------------- Button --------------------------------- */
+.glow {
+    width: 200px;
+    height: 3em;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.glow:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow:active {
+    color: #000
+}
+
+.glow:active:after {
+    background: transparent;
+}
+
+.glow:hover:before {
+    opacity: 1;
+}
+
+.glow:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+/* --------------------------- Table --------------------------------- */
+table{
+  width:100%;
+  table-layout: fixed;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+tr {
+  flex-grow: 1;
+  flex-basis: 0;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+/* --------------------------- Form --------------------------------- */
+
+form {
+  padding: 10px 20px;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  /* -----------------------Flex--------------------*/
+
+  width: 100%;
+  flex-wrap: wrap;
+  color: #99e1d9;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="file"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-weight: 300;
+  font-size: 14px;
+  height: 1em;
+  outline: 0;
+  padding: 15px;
+  width: 10em;
+  background-color: rgba(255,255,255,0.2);
+  color: #99e1d9;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 5px;
+  margin-right: 1em;
+}
+
+fieldset {
+  margin-bottom: 5px;
+  border: none;
+  margin-top: 3px;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+/* --------------------------- scrollbar --------------------------------- */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+/* --------------------------- Navigation --------------------------------- */
+.name {
+    /* -------Base--------------------*/
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-left: 2em;
+}
+.navbar {
+    /* -------Base--------------------*/
+	margin-top: 5px;
+}
+.name a,
+.navbar a {
+    /* -------Base--------------------*/
+	text-align: center;
+	display: block;
+	padding: 5px 15px;
+}
+.navbar a {
+    /* -------Base--------------------*/
+	font-size: .95em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-right: 2em;
+}
+.navbar a:hover {
+    /* -------Base--------------------*/
+	color: #99e1d9;
+}
+/* --------------------------- Layout Containers -------------------------- */
+.main-header {
+    /* -------Base--------------------*/
+	padding-top: .5em;
+	padding-bottom: .5em;
+  background-color: #32292f;
+  width: 100%;
+  position: fixed;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  z-index: 1000;
+}
+.col {
+    /* -------Base--------------------*/
+	padding-right: 1em;
+	padding-left: 1em;
+  border: 5px black;
+  margin-top: 8em;
+/* -----------------------Flex--------------------*/
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+
+}
+.main-footer {
+    /* -------Base--------------------*/
+	background: #32292f;
+	padding: 2em 0;
+	margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: .95em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+/* -----------------------Flex--------------------*/
+.row {
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-items {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.table-style a {
+  color: #fff;
+}
+.table-style a:hover {
+    /* -------Base--------------------*/
+	color: #99e1d9;
+}
+
+.secondary {
+  margin-bottom: 8em;
+}
+.fieldname {
+  margin-right: 1em;
+  margin-left: 1em;
+  text-align: left;
+  font-size: 14;
+}
+
+
+/* Media Containers*/
+@media (max-width: 450px) {
+.main-header,
+.navbar {
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.primary {
+margin-top: 20em;
+}
+}
+
+@media (min-width: 300px) {
+  /* -------Base--------------------*/
+  .main-header{
+    width: 100%;
+  }
+	.row {
+		width: 90%;
+		margin: 0 auto;
+  }
+/* -----------------------Flex--------------------*/
+  .main-header,
+  .navbar,
+  .row,
+  .col,
+  .form-items,
+  form,
+  table,
+  tr,
+  .ttr {
+  display: flex;
+}
+.main-header {
+flex-direction: column;
+align-items: center;
+}
+.form-items {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.col {
+flex: 1;
+flex-direction: column;
+flex-basis: 0;
+width: 100%;
+}
+table{
+  width:100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.ttr {
+  flex-direction: column;
+}
+tr {
+  flex-direction: row;
+}
+
+.row {
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-basis: 0;
+  width: 100%;
+}
+
+
+.primary {
+  margin-top: 20em;
+}
+
+}
+@media (min-width: 1025px) {
+    /* -------Base--------------------*/
+	.main-header{
+    width: 100%;
+  }
+
+	.row {
+		width: 90%;
+		/* max-width: 1150px; */
+
+	}
+/* -----------------------Flex--------------------*/
+.main-header {
+flex-direction: row;
+justify-content: space-between;
+flex-grow: 1;
+}
+.form-items {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ttr {
+  flex-direction: row;
+}
+
+
+
+}
