@@ -328,7 +328,7 @@ justify-content: center;
 }
 
 /* Media Containers*/
-@media  (max-width: 480px) {
+/* @media  (max-width: 480px) {
 	.main-header,
 	.navbar {
 	flex-direction: column;
@@ -373,7 +373,7 @@ align-items: center;
   flex-wrap: wrap;
 }
 
-}
+} */
 
 
 @media (min-width: 300px) {
