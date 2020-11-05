@@ -328,7 +328,7 @@ justify-content: center;
 }
 
 /* Media Containers*/
-@media (max-width: 450px) {
+@media screen and (max-width: 480px) {
 	.main-header,
 	.navbar {
 	flex-direction: column;
