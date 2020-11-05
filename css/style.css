@@ -359,6 +359,13 @@ form {
 	justify-content: center;
 	width: 100%;
 }
+.form-items{
+
+}
+li {
+	flex-direction: column;
+justify-content: center;
+}
 
 }
 
@@ -381,6 +388,9 @@ form {
   .banner,
   .img,
 	.secondary,
+	.primary,
+	.tertiary,
+	.form-items,
   form,
 	li {
   display: flex;
