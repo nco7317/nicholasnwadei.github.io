@@ -371,7 +371,16 @@ align-items: center;
 
 
 @media (max-width: 480px) {
-
+	.main-header,
+  .navbar,
+  .row,
+  .col,
+  .banner,
+  .img,
+  form,
+	li {
+  display: flex;
+}
 	.main-header{
 		width: 100%;
 		position: relative;
