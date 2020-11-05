@@ -379,22 +379,6 @@ align-items: center;
 		width: 90%;
 		margin: 0 auto;
 	}
-
-	/* -----------------------Flex--------------------*/
-	.main-header,
-	.navbar,
-	.row,
-	.col,
-	.banner,
-	.img,
-	.secondary,
-	.primary,
-	.tertiary,
-	.form-items,
-	form,
-	li {
-	display: flex;
-	}
 	.main-header {
 	flex-direction: column;
 	align-items: center;
@@ -471,21 +455,14 @@ align-items: center;
 		align-items: center;
 	}
 
-	#about,
-	#projects,
-	#contact {
-		padding-top: 3em;
-	}
-
-
-	.secondary li {
-		float: left;
-		padding-right: 2em;
-		list-style:
-	}
 	li {
 		flex-direction: column;
 	justify-content: center;
+	}
+	.form-items {
+		flex-grow: 1;
+		flex-basis: 0;
+		
 	}
 }
 
