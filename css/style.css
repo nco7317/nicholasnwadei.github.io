@@ -441,8 +441,6 @@ align-items: center;
 		width: auto;
 	}
 	.img li {
-		float: left;
-		padding-right: 2em;
 		align-items: center;
 	}
 
