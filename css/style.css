@@ -392,13 +392,6 @@ align-items: center;
 	margin-top: 8em;
 	font-size: 20px;
 	}
-	.primary {
-	  flex-basis: 0;
-	  flex: 1;
-	  flex-direction: column;
-	  justify-content: center;
-	  align-items: center;
-	}
 
 	.row {
 	  flex-wrap: wrap;
@@ -467,10 +460,10 @@ align-items: center;
 
 	}
 	form {
-	  flex: 1;
+		flex-grow: 1;
+		flex-basis: 0;
 	  flex-direction: column;
 	  align-items: center;
-		height: auto;
 
 	}
 }
@@ -492,10 +485,6 @@ align-items: center;
   .col,
   .banner,
   .img,
-	.secondary,
-	.primary,
-	.tertiary,
-	.form-items,
   form,
 	li {
   display: flex;
