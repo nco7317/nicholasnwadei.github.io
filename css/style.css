@@ -450,9 +450,13 @@ align-items: center;
 		color: black;
 		text-align: center;
 		width: auto;
+		flex-shrink: 1;
 	}
-	.img {
+	.img li {
+		float: left;
+		padding-right: 2em;
 		align-items: center;
+		flex-shrink: 1;
 	}
 
 	li {
