@@ -129,12 +129,6 @@ form {
   flex-grow: 1;
 }
 
-
-.banner img {
-  width:550px;
-	height:550px;
-}
-
 .col {
     /* -------Base--------------------*/
 	padding-right: 1em;
@@ -376,7 +370,126 @@ align-items: center;
 } */
 
 
-@media (min-width: 300px) {
+@media (max-width: 480px) {
+
+	.main-header{
+		width: 100%;
+	}
+	.row {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	/* -----------------------Flex--------------------*/
+	.main-header,
+	.navbar,
+	.row,
+	.col,
+	.banner,
+	.img,
+	.secondary,
+	.primary,
+	.tertiary,
+	.form-items,
+	form,
+	li {
+	display: flex;
+	}
+	.main-header {
+	flex-direction: column;
+	align-items: center;
+	}
+	.img,
+	.navbar {
+	flex-wrap: wrap;
+	}
+	.banner {
+	margin-top: 8em;
+	}
+	.primary {
+	  flex-basis: 0;
+	  flex: 1;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	}
+
+	.row {
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  align-items: center;
+	}
+
+	.col {
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	}
+  /* -------------------------------------------separator--------------------*/
+	.banner,
+	.main-footer {
+	    /* -------Base--------------------*/
+		text-align: center;
+	}
+	.banner {
+	    /* -------Base--------------------*/
+		padding: 0em;
+		margin-bottom: 0;
+	  margin-top: 20px;
+	  height: auto;
+	  text-align: left;
+	}
+	.images {
+	  height: 70px;
+	  /* width: 70px; */
+	  padding-left: 2em;
+	  padding-right: 2em;
+	}
+
+	.profile-pic {
+	  border-radius: 10px;
+
+	}
+	.lang {
+	  color: black;
+	  font-size: 25px;
+	}
+	.bio {
+	  color: black;
+	  font-size: 18px;
+		text-align: center;
+	}
+	.img p {
+		color: black;
+		text-align: center;
+		width: 10em;;
+	}
+	.img li {
+		float: left;
+		padding-right: 2em;
+		align-items: center;
+	}
+
+	#about,
+	#projects,
+	#contact {
+		padding-top: 3em;
+	}
+
+
+	.secondary li {
+		float: left;
+		padding-right: 2em;
+		list-style:
+	}
+	li {
+		flex-direction: column;
+	justify-content: center;
+	}
+}
+
+@media (min-width: 481px) {
   /* -------Base--------------------*/
   .main-header{
     width: 100%;
@@ -425,6 +538,7 @@ align-items: center;
   flex-wrap: wrap;
 }
 }
+
 @media (min-width: 750px) {
     /* -------Base--------------------*/
 	.main-header{
