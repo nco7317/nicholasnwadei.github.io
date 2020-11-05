@@ -380,10 +380,6 @@ align-items: center;
 		width: 90%;
 		margin: 0 auto;
 	}
-	.main-header {
-	flex-direction: column;
-	align-items: center;
-	}
 	.img,
 	.navbar {
 	flex-wrap: wrap;
@@ -420,7 +416,7 @@ align-items: center;
 	  text-align: left;
 	}
 	.images {
-	  height: 70px;
+	  height: 20px;
 	  /* width: 70px; */
 	  padding-left: 2em;
 	  padding-right: 2em;
@@ -453,11 +449,6 @@ align-items: center;
 	li {
 		flex-direction: column;
 	justify-content: center;
-	}
-	.form-items {
-		flex-grow: 1;
-		flex-basis: 0;
-
 	}
 	form {
 		flex-grow: 1;
