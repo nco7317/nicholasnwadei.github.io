@@ -362,9 +362,15 @@ form {
 .form-items{
 
 }
-li {
-	flex-direction: column;
+.col {
+flex: 1;
+flex-direction: column;
 justify-content: center;
+align-items: center;
+}
+
+.row {
+  flex-wrap: wrap;
 }
 
 }
