@@ -426,7 +426,7 @@ align-items: center;
 	  text-align: left;
 	}
 	.images {
-	  height: 20px;
+	  height: 30px;
 	  /* width: 70px; */
 	  padding-left: 2em;
 	  padding-right: 2em;
@@ -438,7 +438,8 @@ align-items: center;
 	}
 	.lang {
 	  color: black;
-	  font-size: 25px;
+	  font-size: 21px;
+		text-align: center;
 	}
 	.bio {
 	  color: black;
@@ -450,9 +451,7 @@ align-items: center;
 		text-align: center;
 		width: auto;
 	}
-	.img li {
-		float: left;
-		padding-right: 2em;
+	.img {
 		align-items: center;
 	}
 
