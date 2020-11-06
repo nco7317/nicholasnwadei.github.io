@@ -375,7 +375,7 @@ justify-content: center;
 	  text-align: left;
 	}
 	.images {
-	  height: 30px;
+	  height: 50px;
 	  /* width: 70px; */
 	  padding-left: 2em;
 	  padding-right: 2em;
@@ -400,9 +400,12 @@ justify-content: center;
 		width: auto;
 	}
 	.img li {
-		float: left;
+		/* float: left; */
 		padding-right: 2em;
 		align-items: center;
+	}
+	.img img {
+
 	}
 
 	li {
