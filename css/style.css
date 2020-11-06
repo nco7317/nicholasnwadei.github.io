@@ -323,7 +323,13 @@ justify-content: center;
 
 /* Media Containers*/
 @media (max-width: 480px) {
-
+	html{
+	  background: url('../img/ksg2.jpg') no-repeat center center fixed;
+	   -webkit-background-size: cover;
+	   -moz-background-size: cover;
+	   -o-background-size: cover;
+	   background-size: cover;
+	}
 	.main-header{
 		width: 100%;
 		position: relative;
@@ -369,7 +375,7 @@ justify-content: center;
 	  text-align: left;
 	}
 	.images {
-	  height: 20px;
+	  height: 30px;
 	  /* width: 70px; */
 	  padding-left: 2em;
 	  padding-right: 2em;
