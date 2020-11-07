@@ -368,10 +368,6 @@ justify-content: center;
 	   -o-background-size: cover;
 	   background-size: cover;
 	}
-	.row {
-		width: 500px;
-		margin: 0 auto;
-	}
 	h2 {
 		text-align: center;
 	}
@@ -380,8 +376,7 @@ justify-content: center;
 		position: relative;
 	}
 	.row {
-		width: 90%;
-		margin: 0 auto;
+		width: 500px;
 	}
 	.img,
 	.navbar {
