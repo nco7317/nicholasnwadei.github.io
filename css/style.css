@@ -363,7 +363,14 @@ justify-content: center;
 @media (max-width: 480px) {
 	html{
 	  background: url('../img/ksg2.jpg') no-repeat center center fixed;
-	   background-size: auto 100%;
+	   -webkit-background-size: cover;
+	   -moz-background-size: cover;
+	   -o-background-size: cover;
+	   background-size: cover;
+	}
+	.row {
+		width: 500px;
+		margin: 0 auto;
 	}
 	h2 {
 		text-align: center;
