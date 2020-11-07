@@ -243,7 +243,6 @@ form {
 .secondary img {
 	transition: all .2s ease-in-out;
 	height: 100px;
-
 }
 .project {
 	font-size: 20px;
@@ -364,16 +363,16 @@ justify-content: center;
 @media (max-width: 480px) {
 	html{
 	  background: url('../img/ksg2.jpg') no-repeat center center fixed;
-	   -webkit-background-size: cover;
-	   -moz-background-size: cover;
-	   -o-background-size: cover;
-	   background-size: cover;
+	   -webkit-background-size: 480px 1000px;
+	   -moz-background-size: 480px 1000px;
+	   -o-background-size: 480px 1000px;
+	   background-size: 480px 1000px;
 	}
 	h2 {
 		text-align: center;
 	}
 	.main-header{
-		width: 100%;
+		width: 500px;
 		position: relative;
 	}
 	.row {
@@ -492,14 +491,18 @@ justify-content: center;
 	.primary .img {
 		padding-left: 2em;
 	}
-	.tertiary p {
-		margin-bottom: 1em;
-	}
+	.tertiary p,
 	.tertiary li {
 		margin-bottom: 1em;
 	}
 	.uh {
 		margin-left: 0;
+	}
+	.bio li {
+		margin-right: 1em;
+	}
+	.secondary img:hover {
+		transform: none;
 	}
 
 }
