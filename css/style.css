@@ -507,8 +507,8 @@ justify-content: center;
 	.secondary img:hover {
 		transform: none;
 	}
-	.tertiary .lang {
-		margin-top: 1em;
+	.tertiary {
+		padding-top: 2em;
 	}
 
 }
