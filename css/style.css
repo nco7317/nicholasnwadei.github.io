@@ -375,7 +375,8 @@ justify-content: center;
 	.main-header{
 		width: 500px;
 		position: relative;
-		background-image: linear-gradient(to bottom right, rgba(159, 238, 252,.9), #000000);
+		background-color: #3b3b3b;
+		border-radius: 30px;
 	}
 	.row {
 		width: 500px;
@@ -394,15 +395,13 @@ justify-content: center;
 	.main-footer {
 		width: 500px;
 		font-size: 20px;
-		background-image: linear-gradient(to bottom right, rgba(159, 238, 252,.9), #000000);
+		background-color: #3b3b3b;
+		border-radius: 30px;
+		padding-bottom: 3em;
 	}
 	.img,
 	.navbar {
 	flex-wrap: wrap;
-	}
-	.banner {
-	margin-top: 8em;
-	font-size: 30px;
 	}
   /* -------------------------------------------separator--------------------*/
 	.banner,
@@ -417,6 +416,17 @@ justify-content: center;
 	  margin-top: 10em;
 	  height: auto;
 	  text-align: left;
+		font-size: 30px;
+		text-shadow: 2px 2px 4px #000000;
+		border-radius: 40px;
+		color: black;
+		width: 100%;
+		background: url('../img/paper.jpg') no-repeat center center fixed;
+		 -webkit-background-size: cover;
+		 -moz-background-size: cover;
+		 -o-background-size: cover;
+		 background-size: cover;
+
 	}
 	.images {
 	  height: 50px;
@@ -483,7 +493,7 @@ justify-content: center;
 	.blue-box {
 		margin-left: 1em;
 		padding-left: 2em;
-		background-color: rgba(201, 201, 201,.5);
+		background-color: rgba(201, 201, 201,.9);
 	}
 	.secondary li {
 		float: none;
