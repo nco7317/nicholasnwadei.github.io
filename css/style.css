@@ -362,11 +362,8 @@ justify-content: center;
 /* Media Containers*/
 @media (max-width: 480px) {
 	html{
-	  background: url('../img/rain.jpg') no-repeat center center fixed;
-	   -webkit-background-size: cover;
-	   -moz-background-size: cover;
-	   -o-background-size: cover;
-	   background-size: cover;
+	  background: url('../img/rain.jpg') no-repeat fixed;
+	   background-size: 100% 100%;
 	}
 	h2 {
 		text-align: center;
@@ -381,8 +378,8 @@ justify-content: center;
 	  justify-content: center;
 	  align-items: center;
 	}
+
 	.col {
-		width: 90%;
 		flex: 1;
 		flex-direction: column;
 		justify-content: center;
@@ -469,6 +466,7 @@ justify-content: center;
 		justify-content: center;
 		flex-shrink: 1;
 		min-height: 50px;
+		width: 90%;
 	}
 	.push_button {
 		 position: relative;
