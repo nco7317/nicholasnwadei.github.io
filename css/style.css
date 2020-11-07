@@ -376,7 +376,7 @@ justify-content: center;
 		width: 500px;
 		position: relative;
 		background-color: #3b3b3b;
-		border-radius: 30px;
+		border-radius: 10px;
 	}
 	.row {
 		width: 500px;
@@ -396,7 +396,7 @@ justify-content: center;
 		width: 500px;
 		font-size: 20px;
 		background-color: #3b3b3b;
-		border-radius: 30px;
+		border-radius: 10px;
 		padding-bottom: 3em;
 	}
 	.img,
@@ -417,15 +417,6 @@ justify-content: center;
 	  height: auto;
 	  text-align: left;
 		font-size: 30px;
-		text-shadow: 2px 2px 4px #000000;
-		border-radius: 40px;
-		color: black;
-		width: 100%;
-		background: url('../img/paper.jpg') no-repeat center center fixed;
-		 -webkit-background-size: cover;
-		 -moz-background-size: cover;
-		 -o-background-size: cover;
-		 background-size: cover;
 
 	}
 	.images {
