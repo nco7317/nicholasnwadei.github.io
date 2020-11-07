@@ -361,16 +361,17 @@ justify-content: center;
 
 /* Media Containers*/
 @media (max-width: 480px) {
-	html{
-	  background: url('../img/rain.jpg') no-repeat fixed;
-	   background-size: 100% 100%;
+	html {
+		background-color: #6e6e6e;
 	}
+
 	h2 {
 		text-align: center;
 	}
 	.main-header{
 		width: 500px;
 		position: relative;
+		background-color: #000000;
 	}
 	.row {
 		width: 500px;
@@ -389,6 +390,7 @@ justify-content: center;
 	.main-footer {
 		width: 500px;
 		font-size: 20px;
+		background-color: #000000;
 	}
 	.img,
 	.navbar {
@@ -466,7 +468,7 @@ justify-content: center;
 		justify-content: center;
 		flex-shrink: 1;
 		min-height: 50px;
-		width: 90%;
+		background-color: rgba(159, 238, 252,.9)
 	}
 	.push_button {
 		 position: relative;
@@ -477,6 +479,7 @@ justify-content: center;
 	.blue-box {
 		margin-left: 1em;
 		padding-left: 2em;
+		background-color: rgba(201, 201, 201,.5);
 	}
 	.secondary li {
 		float: none;
@@ -498,6 +501,9 @@ justify-content: center;
 	}
 	.secondary img:hover {
 		transform: none;
+	}
+	.tertiary .lang {
+		margin-top: 1em;
 	}
 
 }
