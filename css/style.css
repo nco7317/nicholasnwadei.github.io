@@ -421,11 +421,13 @@ justify-content: center;
 	}
 	.images {
 		height: 100px;
-		
+
 	}
 	.uh {
 		height: 130px;
 		width: 130px;
+		margin-left: 0;
+		margin-bottom: 2em;
 	}
 
 	.profile-pic {
@@ -482,7 +484,10 @@ justify-content: center;
 	.blue-box {
 		margin-left: 1em;
 		padding-left: 2em;
-		background-color: #fcc9c2;
+		background-color: #9feefc;
+	}
+	.primary {
+		color: white;
 	}
 	.secondary li {
 		float: none;
@@ -498,9 +503,6 @@ justify-content: center;
 	.tertiary p,
 	.tertiary li {
 		margin-bottom: 1em;
-	}
-	.uh {
-		margin-left: 0;
 	}
 	.secondary img:hover {
 		transform: none;
