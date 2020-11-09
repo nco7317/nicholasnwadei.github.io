@@ -421,9 +421,9 @@ justify-content: center;
 	}
 	.primary .bio,
 	.primary .lang,
-	.primary .img,
+	.primary .img p,
 	.tertiary .lang,
-	.tertiary .img {
+	.tertiary .img a {
 		color: white;
 	}
 
