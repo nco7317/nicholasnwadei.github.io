@@ -419,12 +419,15 @@ justify-content: center;
 		font-size: 30px;
 
 	}
-	.primary .bio{
+	.primary .bio,
+	.primary .lang,
+	.primary .img,
+	.tertiary .lang,
+	.tertiary .img {
 		color: white;
 	}
-	.primary .lang {
-		color: white;
-	}
+
+
 
 	.images {
 		height: 100px;
