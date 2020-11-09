@@ -423,7 +423,8 @@ justify-content: center;
 	.primary .lang,
 	.primary .img p,
 	.tertiary .lang,
-	.tertiary .img a {
+	.tertiary .img a,
+	.tertiary .img p {
 		color: white;
 	}
 
