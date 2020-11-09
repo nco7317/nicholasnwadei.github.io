@@ -421,7 +421,7 @@ justify-content: center;
 	}
 	.images {
 		height: 100px;
-		width: 100px;
+		
 	}
 	.uh {
 		height: 130px;
@@ -471,7 +471,7 @@ justify-content: center;
 		justify-content: center;
 		flex-shrink: 1;
 		min-height: 50px;
-		background-color: rgba(159, 238, 252,.9);
+		background-color: rgba(78, 91, 138,.9);
 	}
 	.push_button {
 		 position: relative;
