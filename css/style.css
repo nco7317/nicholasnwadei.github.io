@@ -362,7 +362,7 @@ justify-content: center;
 /* Media Containers*/
 @media (max-width: 480px) {
 	html {
-		background: #ffae5c no-repeat center center fixed;
+		background: #f7dc9e no-repeat center center fixed;
 		 -webkit-background-size: cover;
 		 -moz-background-size: cover;
 		 -o-background-size: cover;
@@ -473,7 +473,7 @@ justify-content: center;
 		justify-content: center;
 		flex-shrink: 1;
 		min-height: 50px;
-		background-color: rgba(248, 127, 170,.9);
+		background-color: rgba(159, 238, 252,.9);
 	}
 	.push_button {
 		 position: relative;
@@ -484,7 +484,7 @@ justify-content: center;
 	.blue-box {
 		margin-left: 1em;
 		padding-left: 2em;
-		background-color: rgba(244, 197, 93,.9);
+		background-color: #fcc9c2;
 	}
 	.secondary li {
 		float: none;
