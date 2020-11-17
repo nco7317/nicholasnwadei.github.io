@@ -360,14 +360,21 @@ justify-content: center;
 }
 
 /* Media Containers*/
-@media (max-width: 480px) {
-	html {
+@media screen and (max-width: 480px) {
+	html{
+	  background-image: url('../img/ksg1.jpg');
+	  background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: center center;
+	   background-size: cover;
+	}
+	/* html {
 		background: #f7dc9e no-repeat center center fixed;
 		 -webkit-background-size: cover;
 		 -moz-background-size: cover;
 		 -o-background-size: cover;
 		 background-size: cover;
-	}
+	} */
 
 	h2 {
 		text-align: center;
@@ -375,7 +382,8 @@ justify-content: center;
 	.main-header{
 		width: 500px;
 		position: relative;
-		background-color: rgba(78, 91, 138,.9);
+		/* background-color: rgba(78, 91, 138,.9); */
+		background-color: rgba(255,255,255,.3);
 		border-radius: 10px;
 	}
 	.row {
@@ -395,7 +403,7 @@ justify-content: center;
 	.main-footer {
 		width: 500px;
 		font-size: 20px;
-		background-color: rgba(78, 91, 138,.9);
+		background-color: rgba(255,255,255,.3);
 		border-radius: 10px;
 		padding-bottom: 3em;
 	}
@@ -425,7 +433,7 @@ justify-content: center;
 	.tertiary .lang,
 	.tertiary .img a,
 	.tertiary .img p {
-		color: white;
+		color: black;
 	}
 
 
@@ -484,7 +492,7 @@ justify-content: center;
 		justify-content: center;
 		flex-shrink: 1;
 		min-height: 50px;
-		background-color: rgba(78, 91, 138,.9);
+		background-color: rgba(255,255,255,.9);
 	}
 	.push_button {
 		 position: relative;
@@ -495,7 +503,7 @@ justify-content: center;
 	.blue-box {
 		margin-left: 1em;
 		padding-left: 2em;
-		background-color: #9feefc;
+		background-color: rgba(255,255,255,.9);
 	}
 	.primary {
 		color: white;
