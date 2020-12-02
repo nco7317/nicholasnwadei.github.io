@@ -368,17 +368,20 @@ justify-content: center;
 
 /* Media Containers*/
 @media screen and (max-width: 480px) {
-	html{
-	  background-color: #ed9fac;
-	}
-
-	/* html {
-		background: #f7dc9e no-repeat center center fixed;
+	/* html{
+	  background-image: url('../img/ksg2.jpg');
+	  background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: center center;
+	   background-size: cover;
+	} */
+	html {
+		background: #ed9fac no-repeat center center fixed;
 		 -webkit-background-size: cover;
 		 -moz-background-size: cover;
 		 -o-background-size: cover;
 		 background-size: cover;
-	} */
+	}
 
 	h2 {
 		text-align: center;
