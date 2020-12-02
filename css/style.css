@@ -369,12 +369,9 @@ justify-content: center;
 /* Media Containers*/
 @media screen and (max-width: 480px) {
 	html{
-	  background-image: url('../img/ksg2.jpg');
-	  background-attachment: fixed;
-		background-repeat: no-repeat;
-		background-position: center center;
-	   background-size: cover;
+	  background-color: #ed9fac;
 	}
+
 	/* html {
 		background: #f7dc9e no-repeat center center fixed;
 		 -webkit-background-size: cover;
